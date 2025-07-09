@@ -1,0 +1,185 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jjho4ygG7Sk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emaca\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.aspnet.webapi.client\\4.0.20710\\microsoft.aspnet.webapi.client.4.0.20710.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.aspnet.webapi.core\\4.0.20710\\microsoft.aspnet.webapi.core.4.0.20710.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.aspnet.webapi.webhost\\4.0.20710\\microsoft.aspnet.webapi.webhost.4.0.20710.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.common\\4.8.0\\microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.8.0\\microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.8.0\\microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.8.0\\microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.6\\microsoft.entityframeworkcore.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.6\\microsoft.entityframeworkcore.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.6\\microsoft.entityframeworkcore.analyzers.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.6\\microsoft.entityframeworkcore.design.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.6\\microsoft.entityframeworkcore.relational.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\9.0.6\\microsoft.entityframeworkcore.tools.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.apidescription.server\\8.0.0\\microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.6\\microsoft.extensions.caching.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.6\\microsoft.extensions.caching.memory.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.6\\microsoft.extensions.configuration.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.6\\microsoft.extensions.dependencyinjection.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.6\\microsoft.extensions.dependencyinjection.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.6\\microsoft.extensions.dependencymodel.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.logging\\9.0.6\\microsoft.extensions.logging.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.6\\microsoft.extensions.logging.abstractions.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.options\\9.0.6\\microsoft.extensions.options.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.6\\microsoft.extensions.primitives.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.net.http\\2.0.20710\\microsoft.net.http.2.0.20710.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.web.infrastructure\\1.0.0\\microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mongodb.bson\\3.4.0\\mongodb.bson.3.4.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mongodb.driver\\3.4.0\\mongodb.driver.3.4.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mongodb.driver.core\\2.30.0\\mongodb.driver.core.2.30.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mongodb.libmongocrypt\\1.12.0\\mongodb.libmongocrypt.1.12.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\newtonsoft.json\\7.0.1\\newtonsoft.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle\\5.6.0\\swashbuckle.5.6.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.1\\swashbuckle.aspnetcore.9.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.1\\swashbuckle.aspnetcore.swagger.9.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.1\\swashbuckle.aspnetcore.swaggergen.9.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.1\\swashbuckle.aspnetcore.swaggerui.9.0.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\swashbuckle.core\\5.6.0\\swashbuckle.core.5.6.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition.convention\\7.0.0\\system.composition.convention.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition.hosting\\7.0.0\\system.composition.hosting.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.text.json\\9.0.6\\system.text.json.9.0.6.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\webactivatorex\\2.0.0\\webactivatorex.2.0.0.nupkg.sha512",
+    "C:\\Users\\emaca\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Client 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.Client",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Core 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.Core",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.WebHost 4.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Microsoft.AspNet.WebApi.WebHost",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Net.Http 2.0.20710\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Microsoft.Net.Http",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Microsoft.Web.Infrastructure 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Newtonsoft.Json 7.0.1\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"Swashbuckle.Core 5.6.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "Swashbuckle.Core",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "El paquete \"WebActivatorEx 2.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net9.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "projectPath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\emaca\\source\\repos\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin\\uttt.edu.micro.loggin.csproj",
+      "libraryId": "WebActivatorEx",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

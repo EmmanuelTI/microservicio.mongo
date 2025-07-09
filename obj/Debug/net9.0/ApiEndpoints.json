@@ -1,0 +1,137 @@
+[
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "ActualizarPassword",
+    "RelativePath": "api/actualizarpassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comando",
+        "Type": "uttt.edu.micro.loggin.aplicacion.ActualizarPassword\u002BEjecutaActualizarPassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "IniciarSesion",
+    "RelativePath": "api/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "uttt.edu.micro.loggin.aplicacion.Login\u002BIniciarSesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "uttt.edu.micro.loggin.modelo.UsuarioDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "api/registro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "uttt.edu.micro.loggin.aplicacion.Nuevo\u002BEjecuta",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "GetUsuarioPorNombre",
+    "RelativePath": "api/usuario/{nombreUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreUsuario",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "uttt.edu.micro.loggin.modelo.UsuarioDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "GetUsuarios",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[uttt.edu.micro.loggin.modelo.UsuarioDto, uttt.edu.micro.loggin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[uttt.edu.micro.loggin.WeatherForecast, uttt.edu.micro.loggin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

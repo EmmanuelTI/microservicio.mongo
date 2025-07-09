@@ -1,0 +1,6 @@
+@uttt.edu.micro.loggin_HostAddress = http://localhost:5297
+
+GET {{uttt.edu.micro.loggin_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
