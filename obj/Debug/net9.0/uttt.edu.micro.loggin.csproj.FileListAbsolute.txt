@@ -156,3 +156,4 @@ C:\Users\emaca\source\repos\uttt.edu.micro.loggin\uttt.edu.micro.loggin\obj\Debu
 C:\Users\emaca\source\repos\uttt.edu.micro.loggin\uttt.edu.micro.loggin\obj\Debug\net9.0\uttt.edu.micro.loggin.pdb
 C:\Users\emaca\source\repos\uttt.edu.micro.loggin\uttt.edu.micro.loggin\obj\Debug\net9.0\uttt.edu.micro.loggin.genruntimeconfig.cache
 C:\Users\emaca\source\repos\uttt.edu.micro.loggin\uttt.edu.micro.loggin\obj\Debug\net9.0\ref\uttt.edu.micro.loggin.dll
+C:\Users\emaca\source\repos\uttt.edu.micro.loggin\uttt.edu.micro.loggin\obj\Debug\net9.0\uttt.edu.micro.loggin.sourcelink.json

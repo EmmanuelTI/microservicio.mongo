@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("uttt.edu.micro.loggin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8179c6e10510c46000c33d5396cae9b2fd6b4013")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3278ec9994fac4c290281f04cf8ed70ed8359c7a")]
 [assembly: System.Reflection.AssemblyProductAttribute("uttt.edu.micro.loggin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("uttt.edu.micro.loggin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

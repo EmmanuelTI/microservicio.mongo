@@ -10,13 +10,13 @@ EXPOSE 8081
 
 # Esta fase se usa para compilar el proyecto de servicio
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
-ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["uttt.edu.micro.loggin/uttt.edu.micro.loggin.csproj", "uttt.edu.micro.loggin/"]
-RUN dotnet restore "./uttt.edu.micro.loggin/uttt.edu.micro.loggin.csproj"
+COPY ["uttt.edu.micro.loggin.csproj", "."]
+RUN dotnet restore "uttt.edu.micro.loggin.csproj"
 COPY . .
-WORKDIR "/src/uttt.edu.micro.loggin"
-RUN dotnet build "./uttt.edu.micro.loggin.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src"
+RUN dotnet publish "uttt.edu.micro.loggin.csproj" -c Release -o /app/publish
+
 
 # Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
 FROM build AS publish
