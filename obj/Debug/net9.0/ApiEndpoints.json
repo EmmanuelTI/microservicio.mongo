@@ -43,6 +43,42 @@
   },
   {
     "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "CerrarSesion",
+    "RelativePath": "api/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
+    "Method": "RenovarToken",
+    "RelativePath": "api/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "uttt.edu.micro.loggin.aplicacion.RefreshTokenHandler\u002BRenovarTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "uttt.edu.micro.loggin.modelo.LoginResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "uttt.edu.micro.loggin.api.Controllers.LoginController",
     "Method": "RegistrarUsuario",
     "RelativePath": "api/registro",
     "HttpMethod": "POST",

@@ -9,7 +9,7 @@ using uttt.edu.micro.loggin.modelo;
 namespace uttt.edu.micro.loggin.api.Controllers
 {
     [Route("api")]
-    [ApiController] 
+    [ApiController]
     public class LoginController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -30,7 +30,7 @@ namespace uttt.edu.micro.loggin.api.Controllers
                 var result = await _mediator.Send(data);
                 return Ok(result);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, "Error interno del servidor");
             }
@@ -47,28 +47,51 @@ namespace uttt.edu.micro.loggin.api.Controllers
         public async Task<ActionResult<UsuarioDto>> GetUsuarioPorNombre(string nombreUsuario)
         {
             var usuario = await _mediator.Send(new Consulta.UsuarioPorNombre { NombreUsuario = nombreUsuario });
+
             if (usuario == null)
                 return NotFound();
 
             return Ok(usuario);
         }
+
         [HttpPost("login")]
         public async Task<ActionResult<UsuarioDto>> IniciarSesion([FromBody] Login.IniciarSesion request)
         {
             try
             {
                 var usuario = await _mediator.Send(request);
-                return Ok(usuario); 
+                return Ok(usuario);
             }
             catch (UnauthorizedAccessException ex)
             {
                 return Unauthorized(new { mensaje = ex.Message });
             }
-            catch (System.Exception)
+            catch (Exception)
             {
                 return StatusCode(500, "Error interno del servidor");
             }
         }
+
+        // Endpoint para renovar token con refresh token
+        [HttpPost("refresh")]
+        public async Task<ActionResult<LoginResponseDto>> RenovarToken([FromBody] RefreshTokenHandler.RenovarTokenRequest request)
+        {
+            try
+            {
+                var nuevoToken = await _mediator.Send(request);
+                return Ok(nuevoToken);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Unauthorized(new { mensaje = ex.Message });
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno del servidor");
+            }
+        }
+
+        // Actualizar contraseña
         [HttpPut("actualizarpassword")]
         public async Task<IActionResult> ActualizarPassword([FromBody] ActualizarPassword.EjecutaActualizarPassword comando)
         {
@@ -80,5 +103,10 @@ namespace uttt.edu.micro.loggin.api.Controllers
             return BadRequest(new { mensaje = "No se pudo actualizar la contraseña." });
         }
 
+        [HttpPost("logout")]
+        public IActionResult CerrarSesion()
+        {
+            return Ok(new { mensaje = "Sesión cerrada correctamente." });
+        }
     }
 }

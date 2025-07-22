@@ -4,7 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using MediatR;
 using AutoMapper;
+using Microsoft.Extensions.Options;
 using uttt.edu.micro.loggin.aplicacion;
+using uttt.edu.micro.loggin.config;      
 using uttt.edu.micro.loggin.persistencia;
 
 namespace uttt.edu.micro.loggin.api.extensiones
@@ -13,18 +15,21 @@ namespace uttt.edu.micro.loggin.api.extensiones
     {
         public static IServiceCollection AddCustomServices(this IServiceCollection services, IConfiguration configuration)
         {
-            // Controladores + FluentValidation
+            
+            services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
+
+         
             services.AddControllers()
                 .AddFluentValidation(cfg =>
                     cfg.RegisterValidatorsFromAssemblyContaining<Nuevo.EjecutarValidacion>());
 
-            // MongoDB Context
+          
             services.AddSingleton<ContextoLogin>();
 
-            // MediatR
+      
             services.AddMediatR(typeof(Nuevo.Manejador).Assembly);
 
-            // AutoMapper
+        
             services.AddAutoMapper(typeof(MappingProfile));
 
             return services;

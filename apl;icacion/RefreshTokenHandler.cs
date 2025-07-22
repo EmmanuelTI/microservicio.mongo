@@ -11,36 +11,34 @@ using uttt.edu.micro.loggin.persistencia;
 
 namespace uttt.edu.micro.loggin.aplicacion
 {
-    public class Login
+    public class RefreshTokenHandler
     {
-        public class IniciarSesion : IRequest<LoginResponseDto>
+        public class RenovarTokenRequest : IRequest<LoginResponseDto>
         {
-            public string NombreUsuario { get; set; }
-            public string Password { get; set; }
+            public string RefreshToken { get; set; }
         }
 
-        public class ManejadorIniciarSesion : IRequestHandler<IniciarSesion, LoginResponseDto>
+        public class ManejadorRenovarToken : IRequestHandler<RenovarTokenRequest, LoginResponseDto>
         {
             private readonly ContextoLogin _contexto;
             private readonly IMapper _mapper;
             private readonly JwtSettings _jwtSettings;
 
-            public ManejadorIniciarSesion(ContextoLogin contexto, IMapper mapper, IOptions<JwtSettings> jwtSettings)
+            public ManejadorRenovarToken(ContextoLogin contexto, IMapper mapper, IOptions<JwtSettings> jwtSettings)
             {
                 _contexto = contexto ?? throw new ArgumentNullException(nameof(contexto));
                 _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
                 _jwtSettings = jwtSettings?.Value ?? throw new ArgumentNullException(nameof(jwtSettings));
             }
 
-            public async Task<LoginResponseDto> Handle(IniciarSesion request, CancellationToken cancellationToken)
+            public async Task<LoginResponseDto> Handle(RenovarTokenRequest request, CancellationToken cancellationToken)
             {
-             
                 var usuario = await _contexto.Usuarios
-                    .Find(u => u.NombreUsuario == request.NombreUsuario && u.Password == request.Password)
+                    .Find(u => u.RefreshToken == request.RefreshToken && u.RefreshTokenExpiry > DateTime.UtcNow)
                     .FirstOrDefaultAsync(cancellationToken);
 
                 if (usuario == null)
-                    throw new UnauthorizedAccessException("Nombre de usuario o contraseña incorrectos.");
+                    throw new UnauthorizedAccessException("Refresh token inválido o expirado.");
 
                 usuario.AsignarNuevoRefreshToken();
 
@@ -51,8 +49,8 @@ namespace uttt.edu.micro.loggin.aplicacion
 
                 await _contexto.Usuarios.UpdateOneAsync(filtro, update, cancellationToken: cancellationToken);
 
-              
-                string token = usuario.GenerarJwt(
+           
+                string nuevoToken = usuario.GenerarJwt(
                     claveSecreta: _jwtSettings.SecretKey,
                     issuer: _jwtSettings.Issuer,
                     audience: _jwtSettings.Audience,
@@ -63,7 +61,7 @@ namespace uttt.edu.micro.loggin.aplicacion
                 return new LoginResponseDto
                 {
                     Usuario = usuarioDto,
-                    Token = token
+                    Token = nuevoToken
                 };
             }
         }
