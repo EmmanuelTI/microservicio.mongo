@@ -56,14 +56,15 @@ namespace uttt.edu.micro.loggin.aplicacion
                     claveSecreta: _jwtSettings.SecretKey,
                     issuer: _jwtSettings.Issuer,
                     audience: _jwtSettings.Audience,
-                    minutosExpiracion: 60);
+                    minutosExpiracion: 2);
 
                 var usuarioDto = _mapper.Map<UsuarioDto>(usuario);
 
                 return new LoginResponseDto
                 {
                     Usuario = usuarioDto,
-                    Token = token
+                    Token = token,
+                      RefreshToken = usuario.RefreshToken
                 };
             }
         }
